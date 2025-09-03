@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+[Bb]in/
+[Bb]in32/
+x64/
+
+update_git.cmd
