@@ -1,9 +1,0 @@
-﻿  main.cpp
-C:\@github\@ripcode0\Empty_backup_2017\EmptyDemo\main.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
-  CullScene.cpp
-C:\@github\@ripcode0\Empty_backup_2017\EmptyDemo\Scene\CullScene.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
-  DeferredScene.cpp
-C:\@github\@ripcode0\Empty_backup_2017\EmptyDemo\Scene\DeferredScene.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
-  TerrainScene.cpp
-C:\@github\@ripcode0\Empty_backup_2017\EmptyDemo\Scene\TerrainScene.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
-  Generating Code...

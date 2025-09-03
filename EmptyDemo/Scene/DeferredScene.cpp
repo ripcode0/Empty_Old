@@ -125,7 +125,7 @@ void DeferredScene::UpdateScene(float delta)
 
 	mUbo1->Update(model.data());
 
-	auto pos = mCamera->GetWorldPosition();
+	auto pos = mCamera->GetPostion();
 	mUbo2->Update(&pos);
 }
 
@@ -202,7 +202,7 @@ void DeferredScene::RenderText()
 
 	char buffer[64];
 
-	vec3f pos = mCamera->GetWorldPosition();
+	vec3f pos = mCamera->GetPostion();
 	sprintf(buffer, "pos : %.3f %.3f %.3f", pos.x, pos.y, pos.z);
 	G_FontBatch->Render(350, 30, buffer, vec4f(1));
 

@@ -419,8 +419,8 @@ void Terrain::EvalBiNormalAndTangent(
 	{
 		vec3f N = srcNormal[i];
 		
-		//T = T - (N¡¤T) N
-		//U = U - (N¡¤U) N - (T¡¤U) T
+		//T = T - (Nï¿½ï¿½T) N
+		//U = U - (Nï¿½ï¿½U) N - (Tï¿½ï¿½U) T
 
 		vec3f T = (pTangent[i] - (vec3f::dot(N, pTangent[i])) * N).normalized();
 

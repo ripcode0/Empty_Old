@@ -19,7 +19,7 @@ int main(int args, char* argv[])
 	info->appName = "Empty Engine ";
 	info->apiType = GraphicAPI::OPENGL45;
 	//info->apiType = GraphicAPI::DIRECTX11;
-	//info->flags = APP_CENTERPOS | APP_TITLEBAR;
+	info->flags = APP_CENTERPOS | APP_TITLEBAR;
 	info->vsync = false;
 
 	Application app;
@@ -28,6 +28,7 @@ int main(int args, char* argv[])
 	SceneCache::AddScene<CullScene>("cull");
 	SceneCache::AddScene<TerrainScene>("terrain");
 	SceneCache::SetQueueScene("terrain");
+	//SceneCache::SetQueueScene("cull");
 
 	return app.Run();
 }

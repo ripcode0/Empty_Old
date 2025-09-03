@@ -12,6 +12,7 @@
 
 #include <Engine/Terrain.h>
 #include <Renderer/Batch/FontBatch.h>
+#include <Renderer/Batch/DebugBatch.h>
 
 #include <Renderer/Environment.h>
 
@@ -85,6 +86,8 @@ void TerrainScene::RenderScene()
 
 	mGroundTexture->Bind(0);
 	mTerrain->Render(&frustum);
+
+	
 
 	m_sky->Render();
 }

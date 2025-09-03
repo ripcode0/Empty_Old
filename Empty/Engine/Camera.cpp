@@ -75,7 +75,7 @@ void Camera::ProcessFirstPerson(Input* input, float delta)
 		pitch += mouseDelta.x * mouseSpeed;
 
 		yaw = math::clamp(yaw, -90.f, 90.f);
-		this->SetYawPitchRoll(yaw, pitch, 0.0f);
+		this->SetRotation(yaw, pitch, 0.0f);
 	}
 
 	vec3f pos;
@@ -93,7 +93,7 @@ void Camera::ProcessFirstPerson(Input* input, float delta)
 		pos.x += moveSensor;
 	}
 	if (abs(pos.x) > FLOAT_EPSILON || abs(pos.y) > FLOAT_EPSILON || abs(pos.z) > FLOAT_EPSILON) {
-		this->MovePosition(pos);			//Update -> to child
+		this->MoveDirection(pos);			//Update -> to child
 	}
 }
 

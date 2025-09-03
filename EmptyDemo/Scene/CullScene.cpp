@@ -59,8 +59,8 @@ void CullScene::InitScene()
 
 			Object* obj = this->CreateSceneObject();
 			obj->mModel = mModel;
-			obj->MovePosition(x * 20, 0, z * 20);
-			obj->SetRotateWorld(0, x * 20, z * 30);
+			obj->MoveDirection(x * 20, 0, z * 20);
+			obj->SetRotation(0, x * 35, 0);
 			mObject.emplace_back(obj);
 			instanceData.emplace_back(obj->GetGlobal());
 		}
@@ -70,7 +70,7 @@ void CullScene::InitScene()
 
 	//	Object* obj = this->CreateSceneObject();
 	//	obj->mModel = mModel;
-	//	obj->MoveDirection(x * 29, 0, 0);
+	//	obj->MovePosition(x * 29, 0, 0);
 	//	mObject.emplace_back(obj);
 	//	instanceData.emplace_back(obj->GetGlobal());
 	//}
@@ -146,7 +146,7 @@ void CullScene::RenderText()
 
 	char buffer[64];
 
-	vec3f pos = mCamera->GetWorldPosition();
+	vec3f pos = mCamera->GetPostion();
 	sprintf(buffer, "pos : %.3f %.3f %.3f", pos.x, pos.y, pos.z);
 	G_FontBatch->Render(10, 40, buffer, vec4f(1));
 
