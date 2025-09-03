@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4683C7E9-BF97-4B9F-ADF8-A1AB38276D22}</ProjectGuid>
+    <RootNamespace>Empty</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)include\freetype;$(SolutionDir)include;$(ProjectDir);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <OutDir>$(SolutionDir)bin32\</OutDir>
+    <IntDir>$(SolutionDir)bin32\intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Core/PCH.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>assimp-vc140-mt.lib;freetype271d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cache\BufferCache.cpp" />
+    <ClCompile Include="Cache\ModelCache.cpp" />
+    <ClCompile Include="Cache\SceneCache.cpp" />
+    <ClCompile Include="Cache\ShaderCache.cpp" />
+    <ClCompile Include="Cache\TerrainCache.cpp" />
+    <ClCompile Include="Cache\TextureCache.cpp" />
+    <ClCompile Include="core\FileSystem.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Core\Log.cpp" />
+    <ClCompile Include="Core\PCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Core/PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Core\Profiler.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
+    <ClCompile Include="Engine\Camera.cpp" />
+    <ClCompile Include="Engine\CullManager.cpp" />
+    <ClCompile Include="Engine\Object.cpp" />
+    <ClCompile Include="Engine\Scene.cpp" />
+    <ClCompile Include="Engine\Terrain.cpp" />
+    <ClCompile Include="Graphics\BuiltInShader.cpp" />
+    <ClCompile Include="Graphics\Context.cpp" />
+    <ClCompile Include="Graphics\DX11\DXFrameBuffer.cpp" />
+    <ClCompile Include="Graphics\DX11\DXVertexBuffer.cpp" />
+    <ClCompile Include="Graphics\FrameBuffer.cpp" />
+    <ClCompile Include="Graphics\GL4\GLFrameBuffer.cpp" />
+    <ClCompile Include="Graphics\GL4\GLVertexBuffer.cpp" />
+    <ClCompile Include="Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="Graphics\TypeTransform.cpp" />
+    <ClCompile Include="Graphics\DX11\DXConstantBuffer.cpp" />
+    <ClCompile Include="Graphics\DX11\DXContext.cpp" />
+    <ClCompile Include="Graphics\DX11\DXExtension\DDSTextureLoader.cpp" />
+    <ClCompile Include="Graphics\DX11\DXModel.cpp" />
+    <ClCompile Include="Graphics\DX11\DXShader.cpp" />
+    <ClCompile Include="Graphics\DX11\DXTexture.cpp" />
+    <ClCompile Include="Graphics\GL4\GLContext.cpp" />
+    <ClCompile Include="Graphics\GL4\GLExtension\GLExtension.cpp" />
+    <ClCompile Include="Graphics\GL4\GLModel.cpp" />
+    <ClCompile Include="Graphics\GL4\GLShader.cpp" />
+    <ClCompile Include="Graphics\GL4\GLTexture.cpp" />
+    <ClCompile Include="Graphics\GL4\GLUniformBuffer.cpp" />
+    <ClCompile Include="Graphics\Model.cpp" />
+    <ClCompile Include="Image\Image.cpp" />
+    <ClCompile Include="image\ImageTool.cpp" />
+    <ClCompile Include="Image\Mipmap.cpp" />
+    <ClCompile Include="math\AABB.cpp" />
+    <ClCompile Include="math\Frustum.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="math\Transform.cpp" />
+    <ClCompile Include="Physics\BSP.cpp" />
+    <ClCompile Include="physics\BVH.cpp" />
+    <ClCompile Include="physics\Physics.cpp" />
+    <ClCompile Include="Physics\Tree\QuadTree.cpp" />
+    <ClCompile Include="renderer\batch\DebugBatch.cpp" />
+    <ClCompile Include="Renderer\batch\DX11\DXDebugBatch.cpp" />
+    <ClCompile Include="renderer\batch\DX11\DXFontBatch.cpp" />
+    <ClCompile Include="Renderer\Batch\Font.cpp" />
+    <ClCompile Include="renderer\batch\FontBatch.cpp" />
+    <ClCompile Include="Renderer\batch\GL4\GLDebugBatch.cpp" />
+    <ClCompile Include="renderer\batch\GL4\GLFontBatch.cpp" />
+    <ClCompile Include="Renderer\Batch\SpriteBatch.cpp" />
+    <ClCompile Include="Renderer\Environment.cpp" />
+    <ClCompile Include="renderer\Renderer.cpp" />
+    <ClCompile Include="System\SubSystem.cpp" />
+    <ClCompile Include="window\Application.cpp" />
+    <ClCompile Include="window\Button.cpp" />
+    <ClCompile Include="Window\GdiObject.cpp" />
+    <ClCompile Include="Window\RenderWindow.cpp" />
+    <ClCompile Include="Window\TitleBar.cpp" />
+    <ClCompile Include="Window\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cache\BufferCache.h" />
+    <ClInclude Include="Cache\ModelCache.h" />
+    <ClInclude Include="Cache\SceneCache.h" />
+    <ClInclude Include="Cache\ShaderCache.h" />
+    <ClInclude Include="Cache\TerrainCache.h" />
+    <ClInclude Include="Cache\TextureCache.h" />
+    <ClInclude Include="core\FileSystem.h" />
+    <ClInclude Include="core\ForwardDecl.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Core\Log.h" />
+    <ClInclude Include="Core\PCH.h" />
+    <ClInclude Include="Core\Profiler.h" />
+    <ClInclude Include="Core\Singleton.h" />
+    <ClInclude Include="Core\Timer.h" />
+    <ClInclude Include="Core\Type.h" />
+    <ClInclude Include="Core\TypeIndex.h" />
+    <ClInclude Include="Engine\Camera.h" />
+    <ClInclude Include="Engine\CullManager.h" />
+    <ClInclude Include="Engine\Object.h" />
+    <ClInclude Include="Engine\scene.h" />
+    <ClInclude Include="Engine\Terrain.h" />
+    <ClInclude Include="Graphics\Buffer.h" />
+    <ClInclude Include="Graphics\BuiltInShader.h" />
+    <ClInclude Include="Graphics\Context.h" />
+    <ClInclude Include="Graphics\DX11\DXFrameBuffer.h" />
+    <ClInclude Include="Graphics\DX11\DXVertexBuffer.h" />
+    <ClInclude Include="Graphics\FrameBuffer.h" />
+    <ClInclude Include="Graphics\GL4\GLFrameBuffer.h" />
+    <ClInclude Include="Graphics\GL4\GLVertexBuffer.h" />
+    <ClInclude Include="Graphics\IndexBuffer.h" />
+    <ClInclude Include="Graphics\Sampler.h" />
+    <ClInclude Include="Graphics\TypeTransform.h" />
+    <ClInclude Include="Graphics\DX11\DXConfig.h" />
+    <ClInclude Include="Graphics\DX11\DXConstantBuffer.h" />
+    <ClInclude Include="Graphics\DX11\DXContext.h" />
+    <ClInclude Include="Graphics\DX11\DXExtension\DDSTextureLoader.h" />
+    <ClInclude Include="Graphics\DX11\DXModel.h" />
+    <ClInclude Include="Graphics\DX11\DXShader.h" />
+    <ClInclude Include="Graphics\DX11\DXTexture.h" />
+    <ClInclude Include="Graphics\GL4\GLConfig.h" />
+    <ClInclude Include="Graphics\GL4\GLContext.h" />
+    <ClInclude Include="Graphics\GL4\GLExtension\GLExtension.h" />
+    <ClInclude Include="Graphics\GL4\GLModel.h" />
+    <ClInclude Include="Graphics\GL4\GLShader.h" />
+    <ClInclude Include="Graphics\GL4\GLTexture.h" />
+    <ClInclude Include="Graphics\GL4\GLUniformBuffer.h" />
+    <ClInclude Include="Graphics\Model.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Graphics\Texture.h" />
+    <ClInclude Include="Graphics\UniformBuffer.h" />
+    <ClInclude Include="Graphics\VertexBuffer.h" />
+    <ClInclude Include="Image\Image.h" />
+    <ClInclude Include="image\ImageTool.h" />
+    <ClInclude Include="Image\Mipmap.h" />
+    <ClInclude Include="Math\AABB.h" />
+    <ClInclude Include="math\Frustum.h" />
+    <ClInclude Include="math\math.h" />
+    <ClInclude Include="math\matrix4x4.h" />
+    <ClInclude Include="math\quaternion.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="math\Transform.h" />
+    <ClInclude Include="math\vec2f.h" />
+    <ClInclude Include="math\vec3f.h" />
+    <ClInclude Include="math\vec4f.h" />
+    <ClInclude Include="Physics\BSP.h" />
+    <ClInclude Include="physics\BVH.h" />
+    <ClInclude Include="physics\Physics.h" />
+    <ClInclude Include="Physics\Tree\QuadTree.h" />
+    <ClInclude Include="Physics\Tree\TreeNode.h" />
+    <ClInclude Include="renderer\batch\DebugBatch.h" />
+    <ClInclude Include="Renderer\batch\DX11\DXDebugBatch.h" />
+    <ClInclude Include="renderer\batch\DX11\DXFontBatch.h" />
+    <ClInclude Include="renderer\batch\Font.h" />
+    <ClInclude Include="renderer\batch\FontBatch.h" />
+    <ClInclude Include="Renderer\batch\GL4\GLDebugBatch.h" />
+    <ClInclude Include="renderer\batch\GL4\GLFontBatch.h" />
+    <ClInclude Include="Renderer\Batch\SpriteBatch.h" />
+    <ClInclude Include="Renderer\Environment.h" />
+    <ClInclude Include="renderer\Renderer.h" />
+    <ClInclude Include="System\SubSystem.h" />
+    <ClInclude Include="window\Application.h" />
+    <ClInclude Include="window\ApplicationInfo.h" />
+    <ClInclude Include="window\Button.h" />
+    <ClInclude Include="Window\GdiObject.h" />
+    <ClInclude Include="Window\Painter.h" />
+    <ClInclude Include="Window\RenderWindow.h" />
+    <ClInclude Include="Window\TitleBar.h" />
+    <ClInclude Include="Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\DeferredPS.glsl" />
+    <None Include="..\data\shader\DeferredVS.glsl" />
+    <None Include="..\data\shader\EnvironmentPS.glsl" />
+    <None Include="..\data\shader\EnvironmentPS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\EnvironmentVS.glsl" />
+    <None Include="..\data\shader\EnvironmentVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\ForwardPS.glsl" />
+    <None Include="..\data\shader\ForwardVS.glsl" />
+    <None Include="..\data\shader\GBufferPS.glsl" />
+    <None Include="..\data\shader\InstanceVS.glsl" />
+    <None Include="..\data\shader\ScreenPS.glsl" />
+    <None Include="..\data\shader\SpriteVS.glsl" />
+    <None Include="..\data\shader\TerrainPS.glsl" />
+    <None Include="..\data\shader\TerrainVS.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\data\shader\GBufferVS.glsl" />
+    <Text Include="..\data\shader\SpritePS.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\SpritePS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\SpriteVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\ForwardPS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\ForwardVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\InstanceVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\GBufferPS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\GBufferVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shader\DeferredPS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\data\shader\DeferredVS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

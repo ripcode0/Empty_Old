@@ -1,0 +1,141 @@
+﻿  BufferCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\BufferCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  ModelCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\ModelCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  SceneCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\SceneCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  ShaderCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\ShaderCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  TerrainCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\TerrainCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  TextureCache.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Cache\TextureCache.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  FileSystem.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\core\FileSystem.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Input.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Core\Input.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Log.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Core\Log.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  PCH.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Core\PCH.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Profiler.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Core\Profiler.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Timer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Core\Timer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Camera.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Engine\Camera.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  CullManager.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Engine\CullManager.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Object.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Engine\Object.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Scene.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Engine\Scene.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Terrain.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Engine\Terrain.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  BuiltInShader.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\BuiltInShader.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Context.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\Context.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXFrameBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXFrameBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Generating Code...
+  Compiling...
+  DXVertexBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXVertexBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  FrameBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\FrameBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLFrameBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLFrameBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLVertexBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLVertexBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  IndexBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\IndexBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  TypeTransform.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\TypeTransform.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXConstantBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXConstantBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXContext.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXContext.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DDSTextureLoader.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXExtension\DDSTextureLoader.cpp(20,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXModel.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXModel.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXShader.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXShader.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXTexture.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\DX11\DXTexture.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLContext.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLContext.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLExtension.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLExtension\GLExtension.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLModel.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLModel.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLShader.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLShader.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLTexture.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLTexture.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLUniformBuffer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\GL4\GLUniformBuffer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Model.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Graphics\Model.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Image.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Image\Image.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Generating Code...
+  Compiling...
+  ImageTool.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\image\ImageTool.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Mipmap.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Image\Mipmap.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  AABB.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\math\AABB.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Frustum.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\math\Frustum.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Random.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Math\Random.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Transform.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\math\Transform.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  BSP.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Physics\BSP.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  BVH.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\physics\BVH.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Physics.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\physics\Physics.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  QuadTree.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Physics\Tree\QuadTree.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DebugBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\renderer\batch\DebugBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXDebugBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Renderer\batch\DX11\DXDebugBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  DXFontBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\renderer\batch\DX11\DXFontBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Font.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Renderer\Batch\Font.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  FontBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\renderer\batch\FontBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLDebugBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Renderer\batch\GL4\GLDebugBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GLFontBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\renderer\batch\GL4\GLFontBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  SpriteBatch.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Renderer\Batch\SpriteBatch.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Environment.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Renderer\Environment.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Renderer.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\renderer\Renderer.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Generating Code...
+  Compiling...
+  SubSystem.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\System\SubSystem.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Application.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\window\Application.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Button.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\window\Button.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  GdiObject.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Window\GdiObject.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  RenderWindow.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Window\RenderWindow.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  TitleBar.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Window\TitleBar.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Window.cpp
+C:\@github\@ripcode0\Empty_backup_2017\Empty\Window\Window.cpp(1,10): error C1083: Cannot open include file: 'Core/PCH.h': No such file or directory
+  Generating Code...
